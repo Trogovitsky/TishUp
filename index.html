@@ -410,6 +410,75 @@
 		</div>
 	</footer>
 
+	<div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group calendar">
+                <label class="field-group-label" for="auth-date-one">Дата Заезда:</label>
+                <input class="auth-form-field field" type="text" id="auth-date-one" name="auth-date-one"
+                  placeholder="Укажите дату" value="27 апреля 2020" required>
+                <span class="red">Мы не можем отправить вас в прошлое.</span>
+              </p>
+              <p class="field-group calendar">
+                <label class="field-group-label" for="auth-date-two">Дата Выезда:</label>
+                <input class="auth-form-field field" type="text" id="auth-date-two" name="auth-date-two"
+                  placeholder="Укажите дату" value="1 сентября 2023" required>
+                <span>На эти даты есть свободные номера. Пока есть.</span>
+              </p>
+              <div class="visitors-wrapper">
+                <p class="field-group-visitors visitors-adults">
+                  <label class="field-group-label adults" for="adults">Взрослые:</label>
+                  <button class="visitors-button button-minus" type="button">
+                    <span class="visually-hidden">Уменьшение количества взрослых</span>
+                  </button>
+                  <input class="auth-form-field field" type="text" id="adults" name="adults" placeholder="0" value="2">
+                  <button class="visitors-button button-plus" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
+                    <path fill="none" fill-opacity="none" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+                    <span class="visually-hidden">Увеличение количества взрослых</span>
+                  </button>
+                </p>
+                <p class="field-group-visitors visitors-children">
+                  <span class="field-group-label children-label">
+                    <label class="field-group-label children" for="children">Дети:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button">
+                        <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
+                          <circle cx="13" cy="13" r="13" />
+                          <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                            clip-rule="evenodd" />
+                        </svg>
+                        <span class="visually-hidden">Открыть подсказку</span>
+                      </button>
+                      <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                        18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </span>
+                  <button class="visitors-button button-minus" type="button">
+                    <span class="visually-hidden">Уменьшение количества детей</span>
+                  </button>
+                  <input class="auth-form-field field" type="text" id="children" name="children" placeholder="0"
+                    value="2">
+                  <button class="visitors-button button-plus" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
+                    <path fill="none" fill-opacity="none" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+                    <span class="visually-hidden">Увеличение количества детей</span>
+                  </button>
+                </p>
+              </div>
+              <button class="search-hotel-button" type="submit">Найти</button>
+            </form>
+            <button class="modal-close-button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none">
+              <path fill="none" d="M14.49 1.783 13.199.49 7.49 6.198 1.783.491.49 1.783 6.198 7.49.49 13.198l1.293 1.293L7.49 8.783l5.708 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z"/></svg>
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </section>
+        </div>
+      </div>
+    </div>
 	</div>
 
 	<div class="gototop js-top">
