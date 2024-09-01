@@ -215,6 +215,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-nav ul li.btn-cta a span {
   border: 2px solid rgba(255, 255, 255, 0.5);
+  margin-left: 10px;
   padding: 4px 20px;
   color: #fff;
   display: -moz-inline-stack;
@@ -2153,4 +2154,113 @@ form label {
 
 h1 {
 	text-align: center;
+}
+
+* { box-sizing: border-box }
+
+/* Поля ввода на всю ширину */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Добавляем фоновый цвет, когда поля ввода в фокусе */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Задаем стили для всех кнопок */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Дополнительные стили для кнопки отмены */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Добавляем обтекание и одинаковую ширину для кнопок отмены и регистрации */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Добавляем отступы для контейнерных элементов */
+.container {
+  padding: 16px;
+}
+
+/* Модальное окно (фон) */
+.modal {
+  display: none; /* По умолчанию скрыто */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Поверх всего */
+  left: 0;
+  top: 0;
+  width: 100%; /* На всю ширину */
+  height: 100%; /* На всю высоту */
+  overflow: auto; /* Разрешить прокрутку при необходимости */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Модальное окно (содержимое) */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% от верха, 15% от низа и по центру */
+  border: 1px solid #888;
+  width: 80%; /* Может быть меньше или больше в зависимости от размера экрана */
+}
+
+/* Стили горизонтального разделителя */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Кнопка закрытия (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Очистка обтекания */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Изменяем стили кнопок отмены и регистрации на маленьких экранах */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
 }

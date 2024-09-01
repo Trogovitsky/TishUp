@@ -357,3 +357,12 @@ closeBtn.addEventListener("click", closeModal);
 
 }());
 
+// Получим модальное окно
+var modal = document.getElementById('id01');
+
+// Когда пользователь кликнет за пределами модального окна, закроем его
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

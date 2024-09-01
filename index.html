@@ -77,6 +77,41 @@
 							</ul>
 						</li>
 						<li><a href="contact.html">Контакты</a></li>
+						<li class="btn-cta"><a href="#"><span>Войти</span></a></li>
+						<!-- Кнопка, открывающая модальное окно -->
+<button onclick="document.getElementById('id01').style.display='block'">Регистрация</button>
+
+<!-- Модальное окно (содержит форму регистрации) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть">times;</span>
+  <form class="modal-content" action=#34;/action_page.php">
+    <div class="container">
+      <h1>Регистрация</h1>
+      <p>Заполните данную форму, чтобы создать аккаунт.</p>
+      <hr>
+      <label for="email"><b>Электронная почта</b></label>
+      <input type="text" placeholder="Введите электронную почту" name="email" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder="Введите пароль" name="psw" required>
+
+      <label for="psw-repeat"><b>Повторите пароль</b></label>
+      <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+      </label>
+
+      <p>Создавая аккаунт вы соглашаетесь с нашими <a href="#" style="color:dodgerblue">Правилами & Условиями</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
+        <button type="submit" class="signup">Регистрация</button>
+      </div>
+    </div>
+  </form>
+</div>
+
 						<div class="open-modal-btn-wrapper">
 							<button class="open-modal-btn">
 								Open Modal
@@ -387,7 +422,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
 					<div class="feature-center">
-						<span class="counter js-counter" data-from="0" data-to="1" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter js-counter" data-from="0" data-to="2" data-speed="5000" data-refresh-interval="50">1</span>
 						<span class="counter-label">Персонал</span>
 					</div>
 				</div>
