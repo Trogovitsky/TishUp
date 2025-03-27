@@ -16,7 +16,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #777;
-  background: #fff;
+  background: linear-gradient(0deg, rgba(2,0,54,1) 10%, rgba(3,0,31,1) 90%);
 }
 
 #page {
@@ -47,7 +47,7 @@ body {
 }
 
 a {
-  color: #FBB448;
+  color: #0044ff;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -669,7 +669,7 @@ form label {
 }
 
 .primary-color {
-  color: #FBB448 !important;
+  color: #ffffff !important;
 }
 
 #gtco-header .display-tc,
@@ -729,7 +729,7 @@ form label {
 #gtco-counter .counter {
   font-size: 50px;
   margin-bottom: 10px;
-  color: #FBB448;
+  color: #ffffff;
   font-weight: 100;
   display: block;
 }
@@ -795,7 +795,7 @@ form label {
 }
 
 #gtco-features {
-  background: #FBB448;
+  background: #001323;
 }
 #gtco-features .gtco-heading h2 {
   color: #fff;
@@ -810,7 +810,7 @@ form label {
   width: 90px;
   height: 90px;
   border: 1px solid rgba(255, 255, 255, 0.8);
-  background: #FBB448;
+  background: #00000024;
 }
 #gtco-features .feature-center .icon i {
   color: #fff;
@@ -943,7 +943,7 @@ form label {
 }
 
 #gtco-subscribe {
-  background: rgba(0, 0, 0, 0.8);
+  background: #001323;
 }
 #gtco-subscribe .form-control {
   background: transparent;
@@ -976,7 +976,7 @@ form label {
 #gtco-subscribe .btn {
   height: 46px;
   border: none !important;
-  background: #FBB448;
+  background: #337ab7;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1575,7 +1575,7 @@ form label {
   margin-left: 0px;
 }
 .gtco-nav .gtco-contact ul li a i {
-  color: #FBB448;
+  color: #2897ff;
 }
 .gtco-nav .gtco-contact ul li a:hover i {
   color: #fff;
@@ -1714,7 +1714,7 @@ form label {
   display: block;
   width: 100%;
   position: relative;
-  background: #fff;
+  background: #001b6463;
   overflow: hidden;
   z-index: 9;
   bottom: 0;
@@ -1788,7 +1788,7 @@ form label {
   height: 50px;
   z-index: -1;
   content: "";
-  background: #fff;
+  background: #001b6463;
   -webkit-transform: rotate(4deg);
   -moz-transform: rotate(4deg);
   -ms-transform: rotate(4deg);
