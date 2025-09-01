@@ -161,12 +161,27 @@ button:hover {
   100%  { transform: translateX(-900vw); }
 }
 
-/* Скрыть плеер */
-audio {
-  display: none;
+/* Кнопка музыки */
+.music-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff69b4;
+  color: black;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #ff69b4;
+  cursor: pointer;
+  z-index: 999;
 }
 
-/* Адаптивность */
+.music-button:hover {
+  background: #ff85c1;
+}
+
+/* Адаптив */
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
