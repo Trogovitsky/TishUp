@@ -1,47 +1,179 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Прости меня 💔</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap');
 
-  <!-- Фоновая музыка -->
-  <audio autoplay loop>
-    <source src="music.mp3" type="audio/mpeg" />
-    Ваш браузер не поддерживает аудио.
-  </audio>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  <!-- Главный блок -->
-  <div class="section" id="main">
-    <div class="heart"></div>
-    <h1 class="fade-in">Прости меня...</h1>
-    <p class="typewriter">
-      Я был(а) неправ(а). Мне очень жаль.  
-      Ты — самая нежная, добрая, волшебная.  
-      Прости мою ошибку...  
-      Я хочу снова видеть твою улыбку 💗
-    </p>
-    <button onclick="location.reload()">💗 Обнять меня 💗</button>
-  </div>
+html {
+  scroll-behavior: smooth;
+}
 
-  <!-- Полноэкранный слайдер -->
-  <div class="slider fullscreen-slider">
-    <div class="slides">
-      <img src="img1.jpg" alt="Фото 1" />
-      <img src="img2.jpg" alt="Фото 2" />
-      <img src="img3.jpg" alt="Фото 3" />
-      <img src="img4.jpg" alt="Фото 4" />
-      <img src="img5.jpg" alt="Фото 5" />
-      <img src="img6.jpg" alt="Фото 6" />
-      <img src="img7.jpg" alt="Фото 7" />
-      <img src="img8.jpg" alt="Фото 8" />
-      <img src="img9.jpg" alt="Фото 9" />
-      <img src="img10.jpg" alt="Фото 10" />
-    </div>
-  </div>
+body {
+  background: linear-gradient(to bottom, #000000, #1c1c1c);
+  font-family: 'Open Sans', sans-serif;
+  color: #ffc0cb;
+  overflow-x: hidden;
+}
 
-</body>
-</html>
+/* Секции */
+.section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Заголовок */
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: #ff69b4;
+  margin-bottom: 20px;
+}
+
+/* Текст */
+.text-container {
+  max-width: 90%;
+  margin-bottom: 30px;
+}
+
+.typewriter {
+  overflow: hidden;
+  display: inline-block;
+  border-right: .15em solid #ff69b4;
+  white-space: pre-line;
+  letter-spacing: .05em;
+  animation: typing 5s steps(80, end), blink-caret .75s step-end infinite;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f8c8dc;
+}
+
+/* Кнопка */
+button {
+  background-color: #ff69b4;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #ff69b4;
+}
+
+button:hover {
+  background-color: #ff85c1;
+  transform: scale(1.05);
+}
+
+/* Анимированное сердце */
+.heart {
+  width: 80px;
+  height: 70px;
+  background: #ff69b4;
+  position: relative;
+  margin-bottom: 30px;
+  transform: rotate(-45deg);
+  animation: pulse 1s infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  width: 80px;
+  height: 70px;
+  background: #ff69b4;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -40px;
+  left: 0;
+}
+
+.heart::after {
+  left: 40px;
+  top: 0;
+}
+
+/* Слайдер */
+.fullscreen-slider {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.fullscreen-slider .slides {
+  display: flex;
+  width: 1000vw;
+  height: 100%;
+  animation: slide 30s infinite;
+}
+
+.fullscreen-slider .slides img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Анимации */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ff69b4; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1) rotate(-45deg); }
+  50% { transform: scale(1.1) rotate(-45deg); }
+  100% { transform: scale(1) rotate(-45deg); }
+}
+
+@keyframes slide {
+  0%    { transform: translateX(0vw); }
+  10%   { transform: translateX(0vw); }
+  20%   { transform: translateX(-100vw); }
+  30%   { transform: translateX(-200vw); }
+  40%   { transform: translateX(-300vw); }
+  50%   { transform: translateX(-400vw); }
+  60%   { transform: translateX(-500vw); }
+  70%   { transform: translateX(-600vw); }
+  80%   { transform: translateX(-700vw); }
+  90%   { transform: translateX(-800vw); }
+  100%  { transform: translateX(-900vw); }
+}
+
+/* Скрытый плеер */
+audio {
+  display: none;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .typewriter {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}
