@@ -6,8 +6,8 @@
   <title>Прости меня 💔</title>
   <link rel="stylesheet" href="styles.css" />
 
+  <!-- Автопрокрутка вниз через 8 сек -->
   <script>
-    // Автопрокрутка к слайдеру через 8 секунд
     window.addEventListener('load', () => {
       setTimeout(() => {
         document.getElementById('slider').scrollIntoView({ behavior: 'smooth' });
@@ -17,13 +17,18 @@
 </head>
 <body>
 
-  <!-- Фоновая музыка -->
-  <audio autoplay loop>
+  <!-- Музыка (требуется клик для запуска) -->
+  <audio id="bg-music" loop>
     <source src="music.mp3" type="audio/mpeg" />
     Ваш браузер не поддерживает аудио.
   </audio>
 
-  <!-- Главный блок -->
+  <!-- Кнопка запуска музыки -->
+  <button class="music-button" onclick="document.getElementById('bg-music').play(); this.style.display='none';">
+    нажми
+  </button>
+
+  <!-- Главная секция -->
   <div class="section" id="main">
     <div class="heart"></div>
     <h1>Прости меня...</h1>
