@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap');
 
-/* Общие стили */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,6 +25,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /* Заголовок */
@@ -33,19 +33,25 @@ h1 {
   font-family: 'Pacifico', cursive;
   font-size: 2.5rem;
   color: #ff69b4;
-  text-align: center;
   margin-bottom: 20px;
 }
 
 /* Текст */
-p {
+.text-container {
+  max-width: 90%;
+  margin-bottom: 30px;
+}
+
+.typewriter {
+  overflow: hidden;
+  display: inline-block;
+  border-right: .15em solid #ff69b4;
+  white-space: pre-line;
+  letter-spacing: .05em;
+  animation: typing 5s steps(80, end), blink-caret .75s step-end infinite;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #f8c8dc;
-  text-align: center;
-  margin-bottom: 30px;
-  white-space: pre-line;
-  padding: 0 10px;
 }
 
 /* Кнопка */
@@ -67,17 +73,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Печатный текст */
-.typewriter {
-  overflow: hidden;
-  border-right: .15em solid #ff69b4;
-  white-space: nowrap;
-  letter-spacing: .05em;
-  animation: typing 5s steps(60, end), blink-caret .75s step-end infinite;
-  max-width: 100%;
-}
-
-/* Сердце */
+/* Анимированное сердце */
 .heart {
   width: 80px;
   height: 70px;
@@ -108,20 +104,18 @@ button:hover {
   top: 0;
 }
 
-/* Полноэкранный слайдер */
+/* Слайдер */
 .fullscreen-slider {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   position: relative;
-  margin: 0;
-  padding: 0;
 }
 
 .fullscreen-slider .slides {
   display: flex;
-  width: 1000vw; /* 10 слайдов */
-  height: 100vh;
+  width: 1000vw;
+  height: 100%;
   animation: slide 30s infinite;
 }
 
@@ -163,18 +157,18 @@ button:hover {
   100%  { transform: translateX(-900vw); }
 }
 
-/* Скрытый аудиоплеер */
+/* Скрытый плеер */
 audio {
   display: none;
 }
 
-/* Адаптивность */
+/* Адаптив */
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
   }
 
-  p {
+  .typewriter {
     font-size: 1rem;
   }
 
