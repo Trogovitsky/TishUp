@@ -1,3 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to bottom, #000000, #1c1c1c);
+  font-family: 'Open Sans', sans-serif;
+  color: #ffc0cb;
+  overflow-x: hidden;
+}
+
+/* Секции */
+.section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Заголовки */
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: #ff69b4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f8c8dc;
+  text-align: center;
+  margin-bottom: 30px;
+  white-space: pre-line;
+  padding: 0 10px;
+}
+
+/* Кнопка */
+button {
+  background-color: #ff69b4;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #ff69b4;
+}
+
+button:hover {
+  background-color: #ff85c1;
+  transform: scale(1.05);
+}
+
+/* Печатная анимация */
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #ff69b4;
+  white-space: nowrap;
+  letter-spacing: .05em;
+  animation: typing 5s steps(60, end), blink-caret .75s step-end infinite;
+  max-width: 100%;
+}
+
+/* Сердце */
+.heart {
+  width: 80px;
+  height: 70px;
+  background: #ff69b4;
+  position: relative;
+  margin-bottom: 30px;
+  transform: rotate(-45deg);
+  animation: pulse 1s infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  width: 80px;
+  height: 70px;
+  background: #ff69b4;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -40px;
+  left: 0;
+}
+
+.heart::after {
+  left: 40px;
+  top: 0;
+}
+
 /* Полноэкранный слайдер */
 .fullscreen-slider {
   width: 100vw;
@@ -22,7 +127,23 @@
   flex-shrink: 0;
 }
 
-/* Переключение слайдов */
+/* Анимации */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ff69b4; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1) rotate(-45deg); }
+  50% { transform: scale(1.1) rotate(-45deg); }
+  100% { transform: scale(1) rotate(-45deg); }
+}
+
 @keyframes slide {
   0%    { transform: translateX(0vw); }
   10%   { transform: translateX(0vw); }
@@ -35,4 +156,9 @@
   80%   { transform: translateX(-700vw); }
   90%   { transform: translateX(-800vw); }
   100%  { transform: translateX(-900vw); }
+}
+
+/* Скрыть плеер */
+audio {
+  display: none;
 }
