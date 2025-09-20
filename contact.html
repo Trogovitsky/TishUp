@@ -1,266 +1,721 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>НейроКофейня | Контакты</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="TishUp" />
-	<meta name="keywords" content="TISHA" />
-	<meta name="author" content="UP" />
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - НейроКофейня</title>
+    <link rel="icon" href="images/logo.ico.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/theme-toggle.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            color: #ffffff;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/themify-icons.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
+        .liquid-glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
 
-	<link rel="stylesheet" href="css/magnific-popup.css">
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            background: rgba(15, 15, 35, 0.95);
+            backdrop-filter: blur(20px);
+        }
 
-	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
 
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+        .nav-menu a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
 
-	<link rel="stylesheet" href="css/style.css">
-
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	</head>
-	<body>
-		
-	<div class="gtco-loader"></div>
-	
-	<div id="page">
-
-
-	<nav class="gtco-nav" role="navigation">
-		<div class="gtco-container">
-			
-			<div class="row">
-				<div class="col-sm-4 col-xs-12">
-					<div id="gtco-logo"><a href="index.html">НейроКофейня <em>.</em></a></div>
-				</div>
-				<div class="col-xs-8 text-right menu-1">
-					<ul>
-						<li><a href="index.html">Главная</a></li>
-						<li><a href="menu.html">Меню</a></li>
-						<li><a href="services.html">О кофейне</a></li>
-						<li><a href="#">Праздники</a></li>
-						<li class="active"><a href="contact.html">Контакты</a></li>
-						<!--<li class="btn-cta"><a href="login.php"><span>Войти</span></a></li>-->
-						<a href="dark-teme/dark-index.html"><img src="images/dark-teme.png" height="25px" width="25px"></a></ul>
-						<div class="open-modal-btn-wrapper">
-							<button class="open-modal-btn">
-								
-							</button>
-						</div>
-						<div class="modal-overlay hide">
-							<div class="modal-wrapper">
-								<div class="close-btn-wrapper">
-									<button class="close-modal-btn">
-										Close
-									</button>
-								</div>
-								
-								<div class="modal-content">
-									<div class="tab-content">
-										<div class="tab-content-inner active" data-content="signup">
-											<h3 class="cursive-font">Бронирование столика</h3>
-											<form action="#">
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="activities">Человек</label>
-														<select name="#" id="activities" class="form-control">
-															<option value="">Количество</option>
-															<option value="">1</option>
-															<option value="">2</option>
-															<option value="">3</option>
-															<option value="">4</option>
-															<option value="">5+</option>
-														</select>
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="date-start">Дата</label>
-														<input type="text" id="date" class="form-control">
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="date-start">Время</label>
-														<input type="text" id="time" class="form-control">
-													</div>
-												</div>
-
-												<div class="row form-group">
-													<div class="col-md-12">
-														<input type="submit" class="btn btn-primary btn-block" value="Забронировать сейчас">
-													</div>
-												</div>
-											</form>	
-										</div>
-
-										
-									</div>
-								</div>
-							</div>
-						</div>
-						<script src="index.js"></script>
-					</ul>	
-				</div>
-			</div>
-			
-		</div>
-	</nav>
-	
-	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(images/img_bg_1.jpg)">
-		<div class="overlay"></div>
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-center">
-
-					<div class="row row-mt-15em">
-						<div class="col-md-12 mt-text animate-box" data-animate-effect="fadeInUp">
-							<h1 class="cursive-font">Наши контакты</h1>	
-						</div>
-						
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</header>
-	
-	
-	<div class="gtco-section">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="col-md-6 animate-box">
-					<h3>Напишите нам</h3>
-					<form action="#">
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label class="sr-only" for="name">Имя</label>
-								<input type="text" id="name" class="form-control" placeholder="Ваше имя">
-							</div>
-							
-						</div>
-
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label class="sr-only" for="email">Email</label>
-								<input type="text" id="email" class="form-control" placeholder="Ваш email">
-							</div>
-						</div>
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label class="sr-only" for="message">Сообщение</label>
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Напишите сообщение"></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<input type="submit" value="Отправить" class="btn btn-primary">
-						</div>
-
-					</form>		
-				</div>
-				<div class="col-md-5 col-md-push-1 animate-box">
-					
-					<div class="gtco-contact-info">
-						<h3>Информация</h3>
-						<ul>
-							<li class="address"></li>
-							<li class="phone"><a href="tel://1234567920">+7 *** *** 05-70</a></li>
-							<li class="email"><a href="mailto:info@yoursite.com">TishUp@yandex.ru</a></li>
-							<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.614569%2C55.747094&utm_medium=mapframe&utm_source=maps&z=15.94" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.614569%2C55.747094&z=15.94" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative; border-radius: 25px;"></iframe></div>
-						</ul>
-					</div>
+        .nav-menu a:hover {
+            color: #4ecdc4;
+        }
 
 
-				</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<footer id="gtco-footer" role="contentinfo" style="background-image: url(images/img_bg_1.jpg)" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>		
-		<div class="gtco-container">
-			<div class="row row-pb-md">
+        .auth-buttons {
+            display: flex;
+            gap: 1rem;
+        }
 
-				
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
 
-				
-				<div class="col-md-12 text-center">
-					<div class="gtco-widget">
-						<h3>Как связаться с нами?</h3>
-						<ul class="gtco-quick-contact">
-							<li><a href="#"><i class="icon-phone"></i> +7 *** *** 05-70</a></li>
-							<li><a href="#"><i class="icon-mail2"></i> TishUp@yandex.ru</a></li>
-							<li><a href="#"><i class="icon-chat"></i> Чат</a></li>
-						</ul>
-					</div>
-					<div class="gtco-widget">
-						<h3>Мы в соц сетях</h3>
-						<ul class="gtco-social-icons">
-							<li><a href="https://t.me/+cmzsuwMsLSY3ZmZi" target="_blank"><i class="icon-telegram"></i></a></li>
-							<li><a href="#"><i class="icon-discord"></i></a></li>
-							<li><a href="#"><i class="icon-dzen"></i></a></li>
-						</ul>					</div>
-				</div>
+        .btn-primary {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+        }
 
-				<div class="col-md-12 text-center copyright">
-					<p><small class="block">&copy; 2024</small> 
-						<small class="block">Designed by <a href="https://ssir-team.ru/" target="_blank"> ssir-team</a> | <a href="https://t.me/Tisha_sir" target="_blank">Trogovitsky</a></small></p>
-				</div>
-
-			</div>
-
-			
-
-		</div>
-	</footer>
-
-	</div>
-
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
-	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-
-	<script src="js/jquery.stellar.min.js"></script>
-
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	
-	<script src="js/moment.min.js"></script>
-	<script src="js/bootstrap-datetimepicker.min.js"></script>
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
 
 
-	<script src="js/main.js"></script>
 
-	</body>
-</html>
+        /* Hero Section */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 80px;
+        }
 
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--bg-image-3) center/cover;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 5rem 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            padding: 2rem;
+        }
+
+        .contact-form h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: #4ecdc4;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #4ecdc4;
+            box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.2);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Contact Info */
+        .contact-info {
+            padding: 2rem;
+        }
+
+        .contact-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: #4ecdc4;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateX(10px);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.5rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .contact-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .contact-text p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
+        .contact-text a {
+            color: #4ecdc4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-text a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Map Section */
+        .map-section {
+            margin-bottom: 4rem;
+        }
+
+        .map-container {
+            height: 400px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255, 107, 107, 0.1), rgba(78, 205, 196, 0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Social Media */
+        .social-section {
+            text-align: center;
+        }
+
+        .social-grid {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .social-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .social-item:hover .social-icon {
+            transform: scale(1.1);
+        }
+
+        .social-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .social-text p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-top: 4rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .faq-question.active {
+            background: linear-gradient(45deg, rgba(255, 107, 107, 0.1), rgba(78, 205, 196, 0.1));
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .faq-answer.active {
+            padding: 1.5rem;
+            max-height: 200px;
+        }
+
+        .faq-toggle {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .social-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Floating elements */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">НейроКофейня</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="services.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">Войти</a>
+                <a href="register.html" class="btn btn-primary">Регистрация</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Свяжитесь с Нами</h1>
+                <p>У вас есть вопросы или предложения? Мы всегда рады общению!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <h2 class="section-title">Наши Контакты</h2>
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form liquid-glass">
+                <h3>Отправить сообщение</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Введите ваш телефон">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Тема *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Выберите тему</option>
+                            <option value="booking">Бронирование столика</option>
+                            <option value="delivery">Доставка</option>
+                            <option value="feedback">Отзыв</option>
+                            <option value="partnership">Сотрудничество</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" required placeholder="Введите ваше сообщение"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить сообщение</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info liquid-glass">
+                <h3>Контактная информация</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.ru/maps/213/moscow/?indoorLevel=1&ll=37.610771%2C55.752247&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=37.610771%2C55.752171&whatshere%5Bzoom%5D=16.67&z=16.67" style="color:#eee;font-size:12px;position:absolute;top:14px;">Моховая улица — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.610771%2C55.752247&mode=whatshere&whatshere%5Bpoint%5D=37.610771%2C55.752171&whatshere%5Bzoom%5D=16.67&z=16.67" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative; border-radius: 25px;"></iframe></div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Телефон</h4>
+                        <p><a href="tel:+7XXXXXXXXX">+7 *** *** 05-70</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Email</h4>
+                        <p><a href="mailto:TishUp@yandex.ru">TishUp@yandex.ru</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Часы работы</h4>
+                        <p>Понедельник - Воскресенье<br>8:00 - 23:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container liquid-glass">
+            <div class="map-placeholder">
+                <div style="text-align: center;">
+                    <i class="fas fa-map" style="font-size: 3rem; margin-bottom: 1rem; color: #4ecdc4;"></i>
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.ru/maps/213/moscow/?indoorLevel=1&ll=37.610771%2C55.752247&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=37.610771%2C55.752171&whatshere%5Bzoom%5D=16.67&z=16.67" style="color:#eee;font-size:12px;position:absolute;top:14px;">Моховая улица — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.610771%2C55.752247&mode=whatshere&whatshere%5Bpoint%5D=37.610771%2C55.752171&whatshere%5Bzoom%5D=16.67&z=16.67" width="2000px" height="455px" frameborder="1" allowfullscreen="true" style="position:relative; border-radius: 25px;"></iframe></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="section">
+        <h2 class="section-title">Мы в социальных сетях</h2>
+        <div class="social-grid">
+            <div class="social-item liquid-glass">
+                <div class="social-icon">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <div class="social-text">
+                    <h4>Telegram</h4>
+                    <p>Присоединяйтесь к нашему каналу</p>
+                    <a href="https://t.me/+cmzsuwMsLSY3ZmZi" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">Подписаться</a>
+                </div>
+            </div>
+            <div class="social-item liquid-glass">
+                <div class="social-icon">
+                    <i class="fab fa-discord"></i>
+                </div>
+                <div class="social-text">
+                    <h4>Discord</h4>
+                    <p>Наше сообщество в Discord</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Присоединиться</a>
+                </div>
+            </div>
+            <div class="social-item liquid-glass">
+                <div class="social-icon">
+                    <i class="fab fa-yandex"></i>
+                </div>
+                <div class="social-text">
+                    <h4>Яндекс.Дзен</h4>
+                    <p>Наш блог о кофе и технологиях</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Читать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
+        <div class="faq-container">
+            <div class="faq-item liquid-glass">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Как работает AI-генерация напитков?</span>
+                    <i class="fas fa-plus faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Наш искусственный интеллект анализирует ваши предпочтения, время дня, настроение и создает уникальный рецепт напитка специально для вас. Система учитывает более 50 параметров для создания идеального сочетания вкусов.</p>
+                </div>
+            </div>
+            <div class="faq-item liquid-glass">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Безопасны ли нейро-стимуляторы?</span>
+                    <i class="fas fa-plus faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Все наши нейро-стимуляторы протестированы в лабораториях и одобрены специалистами. Мы используем только натуральные и безопасные ингредиенты в рекомендованных дозировках.</p>
+                </div>
+            </div>
+            <div class="faq-item liquid-glass">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Можно ли заказать доставку?</span>
+                    <i class="fas fa-plus faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Да, мы осуществляем доставку в пределах города. Минимальная сумма заказа - 500 рублей. Доставка бесплатная при заказе от 1000 рублей.</p>
+                </div>
+            </div>
+            <div class="faq-item liquid-glass">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Есть ли детская зона?</span>
+                    <i class="fas fa-plus faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Да, у нас есть специально оборудованная детская зона с игрушками, книгами и безопасными развлечениями. Дети могут играть под присмотром наших сотрудников.</p>
+                </div>
+            </div>
+            <div class="faq-item liquid-glass">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Как забронировать столик?</span>
+                    <i class="fas fa-plus faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Вы можете забронировать столик через форму на главной странице, по телефону или через наши социальные сети. Рекомендуем бронировать заранее, особенно в выходные дни.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html> 
