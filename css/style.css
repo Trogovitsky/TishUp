@@ -943,7 +943,7 @@ form label {
 }
 
 #gtco-subscribe {
-  background: rgba(0, 0, 0, 0.8);
+  background-image: url('../images/sub.jpg');
 }
 #gtco-subscribe .form-control {
   background: transparent;
